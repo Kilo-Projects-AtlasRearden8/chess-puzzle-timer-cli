@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.dist/
+build/
+dist/
+.eggs/
+.chess_puzzle_data.json.tmp
+.env
+.venv/
+venv/

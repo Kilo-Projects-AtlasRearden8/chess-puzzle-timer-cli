@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chess-puzzle-timer"
+version = "1.0.0"
+description = "CLI to time chess puzzle solving, track accuracy and streaks, and log puzzle sources (FEN or URL)."
+requires-python = ">=3.8"
+authors = [{name = "Asdale Dynamics, LLC", email = "dylanasdale@users.noreply.github.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["chess", "puzzle", "cli", "timer", "spaced-repetition"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Topic :: Games/Entertainment :: Board Games",
+]
+
+[project.scripts]
+chess-puzzle-timer = "chess_puzzle_timer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chess_puzzle_timer*"]
